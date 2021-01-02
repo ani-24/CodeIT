@@ -1,0 +1,44 @@
+.sidenav {
+  z-index: 200;
+  position: fixed;
+  right: 0;
+  width: 0;
+  height: 200vh;
+  background: #070c13;
+  overflow-y: auto;
+  transition: 0.4s;
+  opacity: 0;
+  pointer-events: none;
+  ul {
+    list-style: none;
+    a {
+      color: #00acee;
+      width: 100%;
+      transition: 0.3s;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+      li {
+        height: 50px;
+        width: 100%;
+        padding: 20px 10px;
+        margin: 10px 0;
+        transition: 0.3s;
+        &:hover {
+          background: #00acee;
+        }
+      }
+    }
+  }
+}
+.showSidenav {
+  width: 40%;
+  opacity: 1;
+  pointer-events: all;
+}
+@media (max-width: 375px) {
+  .showSidenav {
+    width: 60%;
+  }
+}
